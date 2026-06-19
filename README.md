@@ -41,8 +41,6 @@ Clone the repository, clean any previous builds, and compile the source code:
 
 
 ```
-
-```bash
 git clone https://github.com/inalbaawetrust/vxwm-systray-patch.git
 cd vxwm
 make
