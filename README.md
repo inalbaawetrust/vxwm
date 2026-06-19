@@ -115,10 +115,3 @@ The primary modifier key (MODKEY) is mapped to the Super key (Windows Key). The 
 * Mod + Shift + Arrow Keys: Move viewport position canvas (Left / Right / Up / Down)
 * Mod + r: Reset canvas position back to origin (x:0, y:0)
 """
-
-with open("README.md", "w", encoding="utf-8") as f:
-f.write(readme_content)
-print("File README.md aggiornato in modo sobrio.")
-
-```
-
