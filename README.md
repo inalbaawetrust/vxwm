@@ -1,5 +1,5 @@
-```python
-readme_content = """# vxwm - Dynamic Window Manager for X11
+
+vxwm - Dynamic Window Manager for X11
 
 vxwm is a lightweight, fast, and highly customizable dynamic window manager for X11. Built with efficiency and minimalism in mind, this version features a curated selection of advanced patches and performance optimizations designed to elevate your daily workflow without bloat.
 
@@ -42,12 +42,10 @@ Clone the repository, clean any previous builds, and compile the source code:
 
 ```
 
-```text
-File README.md aggiornato in modo sobrio.
-
 ```bash
-git clone [https://github.com/your-username/vxwm.git](https://github.com/your-username/vxwm.git)
+git clone https://github.com/inalbaawetrust/vxwm-systray-patch.git
 cd vxwm
+make
 sudo make clean install
 
 ```
@@ -115,3 +113,4 @@ The primary modifier key (MODKEY) is mapped to the Super key (Windows Key). The 
 * Mod + Shift + Arrow Keys: Move viewport position canvas (Left / Right / Up / Down)
 * Mod + r: Reset canvas position back to origin (x:0, y:0)
 """
+Original Codebase and Credits: https://codeberg.org/wh1tepearl/vxwm.git
