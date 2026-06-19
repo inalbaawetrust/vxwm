@@ -12,15 +12,15 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;        /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
-static const char *fonts[]          = { "JetBrainsMono Nerd Font:size=10" };
+static const char *fonts[]          = { "gallant12x22:size=12" };
 static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=10";
 
-static MAYBE_CONST char normbgcolor[]           = "#fafafa";
-static MAYBE_CONST char normbordercolor[]       = "#0e0e0e";
-static MAYBE_CONST char normfgcolor[]           = "#0e0e0e";
-static MAYBE_CONST char selfgcolor[]            = "#fafafa";
-static MAYBE_CONST char selbordercolor[]        = "#fafafa";
-static MAYBE_CONST char selbgcolor[]            = "#000000";
+static MAYBE_CONST char normbgcolor[]           = "#0d0c0c";
+static MAYBE_CONST char normbordercolor[]       = "#6a5757";
+static MAYBE_CONST char normfgcolor[]           = "#c2c2c2";
+static MAYBE_CONST char selfgcolor[]            = "#0d0c0c";
+static MAYBE_CONST char selbordercolor[]        = "#CAA178";
+static MAYBE_CONST char selbgcolor[]            = "#CAA178";
 static MAYBE_CONST char *colors[][3] = {
        /*               fg           bg           border   */
        [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
@@ -40,7 +40,7 @@ static const int user_bh = 0;
 
 #if BAR_PADDING
 static const int vertpad = 5;       /* vertical padding of bar */
-static const int sidepad = 65;       /* horizontal padding of bar */
+static const int sidepad = 80;       /* horizontal padding of bar */
 #endif
 
 /* tagging */
@@ -121,7 +121,7 @@ static const char *volupcmd[]   = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@
 static const char *voldncmd[]   = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "5%-", NULL };
 static const char *voltogcmd[]  = { "wpctl", "set-mute", "@DEFAULT_AUDIO_SINK@", "toggle", NULL };
 
-static const char *termcmd[]  = { "kitty", NULL };
+static const char *termcmd[]  = { "st", NULL };
 
 static const char *browsercmd[]  = { "firefox", NULL };
 static const char *roficmd[] = { "rofi", "-show", "drun", NULL };
@@ -233,4 +233,3 @@ static const Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
-
